@@ -12,8 +12,15 @@ class Student{
         this->semester=semester;
     }
 };
+Student* fun(){
+    Student* karim= new Student(15,3.88,6);
+    return karim;
+}
+
+
 int main(){
-    Student rahim(20,5.0,9);
-    cout<<rahim.roll<<" "<<rahim.cgpa<<" "<<rahim.semester;
+    //Student* karim= new Student(20,3.33,2);
+    Student* p=fun();
+    cout<<p->roll<<" "<<p->cgpa<<" "<<p->semester;
     return 0;
 }
