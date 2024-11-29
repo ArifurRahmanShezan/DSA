@@ -14,14 +14,14 @@ int main(){
         int minres=INT_MAX;
         for(int i=0;i<n-1;i++){
             for(int j=i+1;j<n;j++){
-                int res=arr[i]+arr[j]+(j+1)-(i+1);
+                int res=arr[i]+arr[j]+j-i;
                 if(res<minres){
                     minres=res;
                 }
             }
             
         }
-        cout<<minres;
+        cout<<minres<<endl;
     }
     return 0;
 }
